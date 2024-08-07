@@ -33,8 +33,8 @@ runs:
       run: goodbye.sh
       shell: bash
 
-    - name: print secret
-      run: echo $MY_SECRET
-      shell: bash
-      env:
-        MY_SECRET: ${{ secrets.MY_SECRET }}
+    # - name: print secret
+    #   run: echo $MY_SECRET
+    #   shell: bash
+    #   env:
+    #     MY_SECRET: ${{ secrets.MY_SECRET }}
