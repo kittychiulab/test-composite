@@ -34,5 +34,7 @@ runs:
       shell: bash
 
     - name: print secret
-      run: echo ${{ secrets.MY_SECRET }}
+      run: echo $MY_SECRET
       shell: bash
+      env:
+        MY_SECRET: ${{ secrets.MY_SECRET }}
